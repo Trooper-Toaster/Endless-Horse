@@ -15,6 +15,6 @@ client.on('message', msg => {
       } else {
         msg.reply ('Error');
   }
-});
+};
 
 client.login(process.env.BOT_TOKEN);
