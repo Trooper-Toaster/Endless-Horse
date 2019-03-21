@@ -6,11 +6,13 @@ client.on('ready', () => {
   
 });
 
-client.on('message', msg => {
+client.on("message", async message=> {
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
   if (msg.content === ';horse') {
-    let messageArray = msg.content.split(" ");
-    let args = messageArray.slice(1);
-    let horse = msg.guild.channels.find(`name`,"horse");
+  
+    let horse = message.guild.channels.find(`name`,"horse");
     let anything = args.join(" ").slice(22);
     horse.send(anything);
   }});
