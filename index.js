@@ -9,7 +9,8 @@ client.on('ready', () => {
 client.on('message', msg => {
   if (msg.content === ';horse') {
     let horse = msg.guild.channels.find(`name`,"horse");
-    horse.send('Test')
+    let anything = args[1];
+    horse.send(anything)
   }});
 
 client.login(process.env.BOT_TOKEN);
