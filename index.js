@@ -7,6 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
+  let messageArray = message.content.split(" ");
   let args = messageArray.slice(1);
   if (msg.content === ';horse') {
     let horse = msg.guild.channels.find(`name`,"horse");
