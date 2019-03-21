@@ -50,7 +50,7 @@ if (message.guild.id === "556479462045122590"){
 	fs.appendFile('message.txt', `Name: ${message.author.username}#${message.author.discriminator}\r\nChannel: ${message.channel.name}\r\nMessage: ${message.content}\r\nTime: ${message.createdAt}\r\nURL: ${message.url}\r\nServer: ${message.guild}\r\nImage: ${message.attachments.url}\r\n ------- \r\n`, function (err) {
   if (err) throw err;
   console.log('Worked for other');*/
-	});
+	};
 }
 
 });
