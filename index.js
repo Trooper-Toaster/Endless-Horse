@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === ':horse') {
+  if (msg.content === ';horse') {
     let horse = msg.guild.channels.find(`name`,"horse");
     horse.send('Test')
   }});
