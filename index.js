@@ -9,7 +9,7 @@ client.on('ready', () => {
 client.on('message', msg => {
   if (msg.content === ';horse') {
     let horse = msg.guild.channels.find(`name`,"horse");
-    let anything = args[1];
+    let anything = msg.args[1];
     horse.send(anything)
   }});
 
