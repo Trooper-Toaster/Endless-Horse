@@ -10,7 +10,7 @@ client.on("message", async message=> {
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
-  if (msg.content === ';horse') {
+  if (message.content === ';horse') {
   
     let horse = message.guild.channels.find(`name`,"horse");
     let anything = args.join(" ").slice(22);
