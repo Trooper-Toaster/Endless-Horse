@@ -18,7 +18,8 @@ if(wUser.hasPermission("KICK_MEMBERS")) return message.channel.send("Cant warn o
   let reason = args.join(" ").slice(22);
     
     let channelf = message.guild.channels.find(`name`, "horse");
-    channelf(reason);
-  }});
+    channelf.send(reason);
+  }
+});
 
 client.login(process.env.BOT_TOKEN);
